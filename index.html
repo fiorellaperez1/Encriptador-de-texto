@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador - Desafío Alura Latam</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/Logo.png" alt="Logo alura">
+    </header>
+
+    <main>
+        <section class="presentacion">
+            <textarea placeholder="Ingrese el texto aqui" class="caja-texto"></textarea>
+            <div class="contenedor-alerta">
+                <img src="./img/alerta.png" alt="alerta">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <input type="button" value="Encriptar!" class="btn-encriptar">
+                <input type="button" value="Desencriptar!" class="btn-desencriptar">
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="contenedor-textoyimg">
+                <img src="./img/Muñeco.png" alt="munieco" class="img-munieco">
+                <p class="texto-uno">Ningún mensaje fue encontrado.</p>
+                <p class="texto-dos">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <input type="button" class="btn-copiar" value="Copiar">
+        </section>
+    </main>
+
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
